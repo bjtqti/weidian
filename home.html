@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height" />
+	<title>Home</title>
+	<link rel="stylesheet" href="./dist/home.css">
+	<script src="./dist/vendor.js"></script>
+	<script src="./dist/home.js"></script>
+</head>
+<body>
+	<div id="app">
+		<h3 v-on:click="showTips">{{title}}</h3>
+		<ul class="flex">
+			<todo-item v-for="(item,index) in groceryList" v-bind:todo="item" v-bind:index="index" v-bind:key="index"></todo-item>
+		</ul>
+		<div class="main-box" v-for="(value,key,index) in goods">
+			{{value}},{{key}},{{index}}
+		</div>
+	</div>
+</body>
+</html>

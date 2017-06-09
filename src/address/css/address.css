@@ -1,0 +1,173 @@
+@import '../../../node_modules/normalize.css/normalize.css';
+@import '../../common/css/reset.css';
+@import '../../common/css/iconfont.css';
+@import '../../common/css/dialog.css';
+
+body {
+    width: 100%;
+    color: #000;
+    background-color: #efeff4;
+    font-family: "Hiragino Sans GB", "STHeiti", "Microsoft Yahei", Helvetica;
+    -webkit-font-smoothing: antialiased;
+    -webkit-overflow-scrolling: touch;
+    line-height: 1.5;
+    word-wrap: break-word;
+    -webkit-text-size-adjust: 100%;
+    -webkit-touch-callout: none;
+}
+
+a {
+    -webkit-tap-highlight-color: transparent;
+    text-decoration: none;
+    background-color: transparent;
+}
+.flex {
+    display: flex;
+}
+.middle {
+    align-items: center;
+}
+.container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    color: #333;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    height: 1.28rem;
+    background-color: white;
+    border-bottom: 1px solid #e4e5e6;
+}
+
+.main{
+    margin-top: 1.38rem;
+    overflow-y:auto;
+    overflow-x:hidden;
+    will-change: scroll-position;
+    -webkit-overflow-scrolling: touch;
+}
+
+.header-left {
+    display: block;
+    height: 1.28rem;
+    width: 1.28rem;
+    color: #ea2329;
+    font-size: .68267rem;
+    text-align: center;
+    line-height: 1.28rem;
+}
+
+.header-title {
+    line-height: 1.28rem;
+    font-weight: normal;
+    text-align: center;
+}
+
+.button-add {
+    display: block;
+    line-height: 1.28rem;
+    padding: 0 0.4267rem;
+    font-size: .4693rem;
+    color: #ea2329;
+}
+
+.section {
+    border-bottom: 1px solid #e4e5e6;
+    background-color: white;
+    font-size: 0.384rem;
+    margin-bottom: .171rem;
+}
+
+.address {
+    position: relative;
+    padding: .7rem .4267rem;
+    overflow: hidden;
+    font-size: .384rem;
+    color: #666;
+}
+
+.default-sign {
+    color: #ea2329;
+    margin-left: 0.32rem;
+    text-align: right;
+}
+
+.grow {
+    display: inline-block;
+    flex-grow: 1;
+}
+
+.address .phone {
+    text-align: center;
+}
+
+.address-info-text {
+    padding-top: 0.2rem;
+    white-space: normal;
+}
+
+.arrow-right {
+    display: inline-block;
+    color: #bbb;
+    transform: rotateY(-180deg);
+}
+ 
+.right {
+    text-align: right;
+    color: #666;
+}
+
+.notepad {
+    padding: .32rem .4267rem;
+}
+
+.buttons-area {
+    height: 1.28rem;
+    line-height: 1.28rem;
+    text-align: right;
+    padding-right: .4267rem;
+    border-top: 1px solid #e4e5e6;
+    font-size: .384rem;
+}
+.buttons-area > a {
+    display: inline-block;
+    margin: 0 .2134rem;
+}
+
+.buttons-area > a > span {
+    display: inline-block;
+    margin: 0 .25rem;
+}
+
+.default-set {
+    color: #ea2329;
+    float: left;
+}
+
+.dialog-container {
+    font-size: .4267rem;
+}
+
+.dialog-container .dialog {
+    width: 60%;
+}
+
+.dialog-content {
+    padding: .853rem .4267rem;
+}
+
+.dialog-btns {
+    height: 1.067rem;
+}
+
+.dialog-btns > button {
+    font-size: .4267rem;
+}
+
+
